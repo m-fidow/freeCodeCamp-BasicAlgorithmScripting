@@ -6,7 +6,10 @@
 //sort items in decending order by length
 //return length first item of sorted array
 function findLongestWordLength(str) {
-  return str.length;
+  let arrayOfWords = str.split(" ");
+  let sorted = arrayOfWords.sort(function (a, b) {
+    return b.length - a.length;
+  });
+  return sorted[0].length;
 }
-
 findLongestWordLength("The quick brown fox jumped over the lazy dog");
