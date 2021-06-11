@@ -5,11 +5,16 @@
 //loop though array
 //sort items in decending order by length
 //return length first item of sorted array
+// function findLongestWordLength(str) {
+// let arrayOfWords =str.split(" ")
+// let sorted = arrayOfWords.sort(function(a, b) {
+// return b.length - a.length;
+// });
+// return sorted[0].length
+// }
 function findLongestWordLength(str) {
   let arrayOfWords = str.split(" ");
-  let sorted = arrayOfWords.sort(function (a, b) {
-    return b.length - a.length;
-  });
+  let sorted = arrayOfWords.sort((a, b) => b.length - a.length);
   return sorted[0].length;
 }
 findLongestWordLength("The quick brown fox jumped over the lazy dog");
