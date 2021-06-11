@@ -4,7 +4,9 @@
 
 // Your result must be a string.
 function reverseString(str) {
-  return str;
+  let lettersArray = str.split("");
+  let reversedArray = lettersArray.reverse();
+  return reversedArray.join("");
 }
 
 reverseString("hello");
