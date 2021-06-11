@@ -4,7 +4,7 @@
 //split string into array
 //loop though array
 //sort items in decending order by length
-//return first item of sorted array
+//return length first item of sorted array
 function findLongestWordLength(str) {
   return str.length;
 }
