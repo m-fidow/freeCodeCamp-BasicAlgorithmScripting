@@ -1,6 +1,6 @@
 //check target length
 //use substring to return the ending of string
-//  substring(startIndex) will be target.length -1
+//  substring(startIndex) will be string.length - target.length
 //  set as ending_of_string
 //if target and ending_of_string are the same return true
 //else, return false
