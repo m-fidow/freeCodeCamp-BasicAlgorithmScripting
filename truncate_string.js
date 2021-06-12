@@ -6,7 +6,12 @@
 //return join splicedArray and add truncation signs at the end
 
 function truncateString(str, num) {
-  return str;
+  let arrayOfLetters = str.split("");
+  if (arrayOfLetters.length > num) {
+    let spliced = arrayOfLetters.splice(0, num);
+    return spliced.join("") + "...";
+  } else {
+    return str;
+  }
 }
-
 truncateString("A-tisket a-tasket A green and yellow basket", 8);
