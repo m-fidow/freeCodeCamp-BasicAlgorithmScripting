@@ -6,7 +6,11 @@
 //else, return false
 
 function confirmEnding(str, target) {
-  return str;
+  let endingOfString = str.substring(str.length - target.length);
+  if (endingOfString === target) {
+    return true;
+  } else {
+    return false;
+  }
 }
-
 confirmEnding("Bastian", "n");
