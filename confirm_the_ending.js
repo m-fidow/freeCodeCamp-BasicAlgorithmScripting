@@ -5,12 +5,17 @@
 //if target and ending_of_string are the same return true
 //else, return false
 
+// function confirmEnding(str, target) {
+//   let endingOfString = str.substring(str.length - target.length);
+//   if (endingOfString === target) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
 function confirmEnding(str, target) {
   let endingOfString = str.substring(str.length - target.length);
-  if (endingOfString === target) {
-    return true;
-  } else {
-    return false;
-  }
+  return endingOfString === target ? true : false;
 }
 confirmEnding("Bastian", "n");
