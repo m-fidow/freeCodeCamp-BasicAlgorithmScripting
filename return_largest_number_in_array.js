@@ -15,6 +15,17 @@ function largestOfFour(arr) {
   return finalArray;
 }
 
+function largestOfFour(arr) {
+  let finalArray = [];
+  arr.forEach((arr) => {
+    let largestNumberInEachArray = arr.sort((a, b) => {
+      return b - a;
+    });
+    finalArray.push(largestNumberInEachArray[0]);
+  });
+
+  return finalArray;
+}
 largestOfFour([
   [4, 5, 1, 3],
   [13, 27, 18, 26],
