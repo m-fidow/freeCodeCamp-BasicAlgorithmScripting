@@ -14,8 +14,13 @@
 //   }
 // }
 
+// function confirmEnding(str, target) {
+//   let endingOfString = str.substring(str.length - target.length);
+//   return endingOfString === target ? true : false;
+// }
+
 function confirmEnding(str, target) {
   let endingOfString = str.substring(str.length - target.length);
-  return endingOfString === target ? true : false;
+  return endingOfString === target;
 }
 confirmEnding("Bastian", "n");
