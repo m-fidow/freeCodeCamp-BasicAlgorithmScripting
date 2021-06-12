@@ -3,7 +3,7 @@
 //if arrayOfLetters.length > num
 //splice arrayOfLetters (0,num)
 //set as splicedArray
-//return splicedArray
+//return join splicedArray and add truncation signs at the end
 
 function truncateString(str, num) {
   return str;
