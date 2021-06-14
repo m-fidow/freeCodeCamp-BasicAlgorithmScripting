@@ -15,11 +15,16 @@
 //   }
 //   return largestFourArray;
 // }
+// function largestOfFour(arr) {
+//   let largestFourArray = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     largestFourArray.push(arr[i].sort((a, b) => b - a)[0]);
+//   }
+//   return largestFourArray;
+// }
 function largestOfFour(arr) {
   let largestFourArray = [];
-  for (let i = 0; i < arr.length; i++) {
-    largestFourArray.push(arr[i].sort((a, b) => b - a)[0]);
-  }
+  arr.forEach((x) => largestFourArray.push(x.sort((a, b) => b - a)[0]));
   return largestFourArray;
 }
 
