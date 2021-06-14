@@ -6,7 +6,14 @@
 //push first item of array into largestFourArray
 //return largestFourArray
 function largestOfFour(arr) {
-  return arr;
+  let largestFourArray = [];
+  for (let i = 0; i < arr.length; i++) {
+    let smallArray = arr[i];
+    // console.log(smallArray)
+    let sortedArray = smallArray.sort((a, b) => b - a);
+    largestFourArray.push(sortedArray[0]);
+  }
+  return largestFourArray;
 }
 
 largestOfFour([
